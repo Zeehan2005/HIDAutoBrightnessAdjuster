@@ -16,3 +16,8 @@ Send the shortcut of AutoBrightnessAdjuster.vbs to the path "shell:startup" to s
 在任务管理器中结束任务来关闭功能。
 
 End the task in Task Manager to close the feature.
+
+## Copyright
+未经允许，请勿转载。经允许的转载请注明来源。
+
+Without permission, do not reprint. Reprints with permission must indicate the source.
