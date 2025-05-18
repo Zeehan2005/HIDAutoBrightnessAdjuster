@@ -7,3 +7,12 @@ It may also suitable for your PC with HID light sensor.
 
 Most of code was made by ChatGPT, because i dont know C#. 
 
+## 使用方法 Usage method
+
+送AutoBrightnessAdjuster.vbs的快捷方式到路径"shell:startup"可开机启动。
+
+Send the shortcut of AutoBrightnessAdjuster.vbs to the path "shell:startup" to start automatically at startup.
+
+在任务管理器中结束任务来关闭功能。
+
+End the task in Task Manager to close the feature.
