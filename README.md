@@ -1,0 +1,2 @@
+# HIDAutoBrightnessAdjuster
+AutoBrightnessAdjuster BY ChatGPT
