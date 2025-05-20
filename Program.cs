@@ -4,12 +4,10 @@ using System.Management;
 using System.Threading;
 using Windows.Devices.Sensors;
 
-namespace AutoBrightnessAdjuster
+namespace HIDAutoBrightnessAdjuster
 {
     class Program
     {
-        // History of last 5 lux readings
-        private static readonly Queue<double> _luxHistory = new Queue<double>(5);
         static LightSensor _sensor;
 
         // Smooth transition parameters
@@ -36,7 +34,6 @@ namespace AutoBrightnessAdjuster
                 if (reading != null)
                 {
                     double lux = reading.IlluminanceInLux;
-                    EnqueueLux(lux);
 
                     int targetBrightness = MapLuxToBrightness(lux, 1000.0, 0.6);
                     Console.WriteLine($"Ambient light: {lux:F1} lux -> Setting brightness to {targetBrightness}%");
@@ -55,14 +52,6 @@ namespace AutoBrightnessAdjuster
             }
         }
 
-        static void EnqueueLux(double lux)
-        {
-            _luxHistory.Enqueue(lux);
-            if (_luxHistory.Count > 5)
-            {
-                _luxHistory.Dequeue();
-            }
-        }
 
         static int MapLuxToBrightness(double lux, double maxLux, double gamma)
         {
