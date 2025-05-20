@@ -9,7 +9,7 @@ Most of code was made by ChatGPT, because i dont know C#.
 
 ## 使用方法 Usage method
 
-送AutoBrightnessAdjuster.vbs的快捷方式到路径"shell:startup"可开机启动。
+送AutoBrightnessAdjuster_NoConsole.vbs的快捷方式到路径"shell:startup"可开机启动。
 
 Send the shortcut of AutoBrightnessAdjuster.vbs to the path "shell:startup" to start automatically at startup.
 
