@@ -17,6 +17,16 @@ Send the shortcut of AutoBrightnessAdjuster.vbs to the path "shell:startup" to s
 
 End the task in Task Manager to close the feature.
 
+## 特性 Feature
+1.若检测到环境亮度变化小于5lux，不调整亮度，等待5秒后再检测。
+If the change in ambient brightness is less than 5 lux, do not adjust the brightness, and wait for 5 seconds before checking again.
+
+2.如果检测到亮度手动调整，跳过本次循环。
+If manual brightness adjustment detected, Skipping this cycle.
+
+3.lux变化小于2lux，不改变亮度。
+If the change in lux is less than 2 lux, do not change the brightness.
+
 ## Copyright
 未经允许，请勿转载。经允许的转载请注明来源。
 
